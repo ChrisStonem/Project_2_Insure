@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+@font-face{
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+body{
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10vh 0 5vh 0;
+}
+
+.navigation_list{
+   display: flex;
+   flex-direction: row;
+   gap: 3vh;
+}
+.navigation_list li{
+    margin-top: 1vh;
+}
+.navigation_list .btn{
+    text-decoration: none;
+    background-color: hsl(256, 26%, 20%);
+    border: 3px white;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+}
+.navcon{
+    text-decoration: none;
+    color: #97A7B7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+/* 1st Section */
+.section1 {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    background-color: hsl(256, 26%, 20%);
+    position: relative;
+}
+.left {
+    height: 550px;
+    width: 490px;
+    background: url(./images/image-intro-desktop.jpg)
+      no-repeat center / cover;
+    float: right;
+    margin-top: 12vh;
+    margin-right: 12vh;
+}
+.right {
+    display: flex;
+    padding: 30px;
+    color: white;
+    margin-top: 10vh;
+    margin-left: 12vh;
+}
+.right h1{
+    font-size: 50px;
+}
+.right p{
+    font-size: 18px;
+}
+.right .btn{
+    text-decoration: none;
+    background-color: hsl(256, 26%, 20%);
+    border: 1px solid white;
+    color: white;
+    padding: 8px 20px;
+    margin: 20px 20px;
+    display: inline-block;
+    font-size: 14px;
+}
+.right hr{
+    display: block;
+    margin-right: 80vh;
+    margin-bottom: 10vh;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #97A7B7
+}
+.pattern1{
+    position: absolute;
+    z-index: 2;
+    margin-top: 60vh;
+    height: 60vh;
+}
+.pattern2{
+    position: absolute;
+    z-index: 2;
+    margin-left: 153.5vh;
+    height: 70vh;
+
+}
+/* 2nd Section */
+.section2{
+    margin-top: 50vh;
+    margin-left: 12vh;
+    padding: 30px;
+}
+.container2{
+    display: grid;
+    grid-template-areas: 
+      "headline headline headline"
+      "snappy_process affordable_prices people_first"
+}
+
+.section2 hr{
+    display: block;
+    margin-right: 160vh;
+    margin-bottom: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #97A7B7
+}
+.container2 h1{
+    font-size: 60px;
+    margin-bottom: 10vh;
+    grid-area: headline;
+}
+
+.container3{
+    grid-area: snappy_process;
+    width: 43vh;
+    margin-bottom: 10vh;
+}
+.container3 h2{
+    font-size: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+.container4{
+    grid-area: affordable_prices;
+    width: 43vh;
+    margin-bottom: 10vh;
+}
+.container4 h2{
+    font-size: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+.container5{
+    grid-area: people_first;
+    width: 43vh;
+    margin-bottom: 10vh;
+}
+.container5 h2{
+    font-size: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+/* 3rd Section */
+.section3{
+    background-color:hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: inline;
+    margin-left: 16.7vh;
+    margin-right: 16.7vh;
+    padding-bottom: 2vh;
+}
+.section3 h1{
+    color: white;
+    font-size: 50px;
+    margin: 5vh 3vh 5vh 5vh;
+    position: absolute;
+    z-index: 1;
+}
+.pattern3{
+    margin-left: 124vh;
+    height: 28vh;
+    position: absolute;
+}
+.section3 .btn{
+    text-decoration: none;
+    background-color: hsl(256, 26%, 20%);
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 135vh;
+    position: relative;
+    z-index: 1;
+}
+
+/* footer */
+footer{
+    background-color: #FAFAFA;
+    margin-top: 12vh;
+    height: 70vh;
+    margin-bottom: 10vh;
+    position: absolute;
+    z-index: -2
+}
+.pattern4{
+    position: absolute;
+    margin-bottom: 130vh;
+    z-index: -1;
+    /* height: 30vh; */
+    width: 60vh
+}
+.logo{
+    margin-left: 16.7vh;
+    margin-top: 10vh;
+    margin-right: 136.5vh;
+}
+.social_medias{
+    color:#97A7B7;
+    margin-right: 20vh;
+}
+footer hr{
+    display: block;
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+    margin-left: 16.7vh;
+    margin-right: 16.7vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #97A7B7;
+}
+
+.footer_reiter{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 16.5vh;
+    position: relative;
+    z-index: 0;
+}
+
+.footer_reiter h2{
+    color: #97A7B7;
+    font-size: 16px;
+    margin-bottom: 3vh;
+}
+.list1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 1.5vh;
+    
+}
+.list2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 1.5vh;
+}
+.list3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 1.5vh;
+}
+.list4 a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 1.5vh;
+}
